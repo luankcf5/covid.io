@@ -5,7 +5,7 @@
 function getBotResponse(input) {
 
     // Loại bỏ thành phần số, dấu câu,ký tự đặc biệt, chữ in hoa
-    input = input.replace(/[^a-zA-Z]/g, "");
+    // input = input.replace(/[^a-zA-Z]/g, "");
     input = input.replace(/A/g,"a");
     input = input.replace(/B/g,"b");
     input = input.replace(/C/g,"c");
@@ -47,6 +47,7 @@ function getBotResponse(input) {
     input = input.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
     input = input.replace(/Đ/g, "D");
     input = input.replace(/ /g, "");
+    input = input.replace(/[^a-zA-Z]/g, "");
 
     // Thay thế các từ trùng lặp
     input = input.replace(/covid/g,"");
