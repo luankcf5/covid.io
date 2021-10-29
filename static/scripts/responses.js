@@ -56,6 +56,8 @@ function getBotResponse(input) {
     input = input.replace(/virut/g,"");
     input = input.replace(/corona/g,"");
 
+    input = input.replace(/khaibaoyte/g,"khaibaor");
+
     input = input.replace(/nhiembenh/g,"mac");
     input = input.replace(/macbenh/g,"mac");
     input = input.replace(/dinhbenh/g,"mac");
