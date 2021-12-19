@@ -19,6 +19,8 @@
     $Nhom_uu_tien = "";
     $Ngay_muon_tiem = "";
     $Buoi_muon_tiem = "";
+    $Ngay_tiem_mui1 ="";
+    $Loai_vacxin_mui1 ="";
     $Tiensubenh_phanve = "";
     $Tiensubenh_covid = "";
     $Tiensu_tiemvacxin = "";
@@ -51,7 +53,7 @@
         } else {
             $Ho_ten = input_data($_POST["Ho_ten"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Ho_ten)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Ho_ten)) {
                 $Ho_tenErr = "Họ và tên chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -111,7 +113,7 @@
         } else {
             $Quoc_tich = input_data($_POST["Quoc_tich"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Quoc_tich)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Quoc_tich)) {
                 $Quoc_tichErr = "Tên Quốc tịch chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -121,7 +123,7 @@
         } else {
             $Tinh_thanh = input_data($_POST["Tinh_thanh"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Tinh_thanh)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Tinh_thanh)) {
                 $Tinh_thanhErr = "Tên tỉnh thành chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -131,7 +133,7 @@
         } else {
             $Quan_huyen = input_data($_POST["Quan_huyen"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Quan_huyen)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Quan_huyen)) {
                 $Quan_huyenErr = "Tên quận huyện chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -141,7 +143,7 @@
         } else {
             $Xa_phuong = input_data($_POST["Xa_phuong"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Xa_phuong)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Xa_phuong)) {
                 $Xa_phuongErr = "Tên xã phường chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -163,6 +165,7 @@
     if (isset($_POST["submit"]) && (empty($Ho_tenErr)) && (empty($So_dien_thoaiErr)) && (empty($EmailErr)) && (empty($So_cmndErr)) && (empty($So_the_bhytErr)) && (empty($Quoc_tichErr)) && (empty($Tinh_thanhErr)) && (empty($Quan_huyenErr)) && (empty($Xa_phuongErr)) && (empty($Sonha_tenduongErr)) ) {
         $Loai_dang_ky = $_POST["Loai_dang_ky"];
         $Mui_tiem = $_POST["Mui_tiem"];
+        $_POST["Ho_ten"] = mb_strtoupper($_POST["Ho_ten"]);
         $Ho_ten = $_POST["Ho_ten"];
         $Ngay_sinh = $_POST["Ngay_sinh"];
         $Gioi_tinh = $_POST["Gioi_tinh"];
@@ -176,11 +179,13 @@
         $Tinh_thanh = $_POST["Tinh_thanh"];
         $Quan_huyen = $_POST["Quan_huyen"];
         $Xa_phuong = $_POST["Xa_phuong"];
-        $Sonha_tenduong  = $_POST["Sonha_tenduong"];
+        $Sonha_tenduong = $_POST["Sonha_tenduong"];
         $Dan_toc = $_POST["Dan_toc"];
         $Nhom_uu_tien = $_POST["Nhom_uu_tien"];
         $Ngay_muon_tiem = $_POST["Ngay_muon_tiem"];
         $Buoi_muon_tiem = $_POST["Buoi_muon_tiem"];
+        $Ngay_tiem_mui1 = $_POST["Ngay_tiem_mui1"];
+        $Loai_vacxin_mui1 = $_POST["Loai_vacxin_mui1"];
         $Tiensubenh_phanve = $_POST["Tiensubenh_phanve"];
         $Tiensubenh_covid  = $_POST["Tiensubenh_covid"];
         $Tiensu_tiemvacxin = $_POST["Tiensu_tiemvacxin"];
@@ -199,7 +204,7 @@
     // VALUES ('$Loai_dang_ky', '$Mui_tiem', '$Ho_ten', '$Ngay_sinh', '$Gioi_tinh', '$So_dien_thoai',, '$Email', '$So_cmnd', '$So_the_bhyt', '$Nghe_nghiep', '$Don_vi_cong_tac' '$Quoc_tich', '$Tinh_thanh', '$Quan_huyen', '$Xa_phuong', '$Sonha_tenduong', '$Dan_toc', '$Nhom_uu_tien', '$Ngay_muon_tiem', '$Buoi_muon_tiem', '$Tiensubenh_phanve', '$Tiensubenh_covid', '$Tiensu_tiemvacxin', '$Tiensubenh_suygiammiendich', '$Su_dung_thuoc_corticoid', '$Tiensubenh_captinh', '$Tiensubenh_mantinh', '$Tiensubenh_mantinh_dadieutri', '$Dang_mang_thai', '$Do_tuoi_tren_65', '$Tiensubenh_dongmau', '$Tiensubenh_diung', '$Tiensubenh_khac')";
     // mysqli_query($conn, $sql);
 
-        $sql = "INSERT INTO `dang_ky_tiem_phong` (`Loai_dang_ky`, `Mui_tiem`, `Ho_ten`, `Ngay_sinh`, `Gioi_tinh`, `So_dien_thoai`, `Email`, `So_cmnd`, `So_the_bhyt`, `Nghe_nghiep`, `Don_vi_cong_tac`, `Quoc_tich`, `Tinh_thanh`, `Quan_huyen`, `Xa_phuong`, `Sonha_tenduong`, `Dan_toc`, `Nhom_uu_tien`, `Ngay_muon_tiem`, `Buoi_muon_tiem`, `Tiensubenh_phanve`, `Tiensubenh_covid`, `Tiensu_tiemvacxin`, `Tiensubenh_suygiammiendich`, `Su_dung_thuoc_corticoid`, `Tiensubenh_captinh`, `Tiensubenh_mantinh`, `Tiensubenh_mantinh_dadieutri`, `Dang_mang_thai`, `Do_tuoi_tren_65`, `Tiensubenh_dongmau`, `Tiensubenh_diung`, `Tiensubenh_khac`) VALUES ('$Loai_dang_ky', '$Mui_tiem', '$Ho_ten', '$Ngay_sinh', '$Gioi_tinh', '$So_dien_thoai', '$Email', '$So_cmnd', '$So_the_bhyt', '$Nghe_nghiep', '$Don_vi_cong_tac', '$Quoc_tich', '$Tinh_thanh', '$Quan_huyen', '$Xa_phuong', '$Sonha_tenduong', '$Dan_toc', '$Nhom_uu_tien', '$Ngay_muon_tiem', '$Buoi_muon_tiem', '$Tiensubenh_phanve', '$Tiensubenh_covid', '$Tiensu_tiemvacxin', '$Tiensubenh_suygiammiendich', '$Su_dung_thuoc_corticoid', '$Tiensubenh_captinh', '$Tiensubenh_mantinh', '$Tiensubenh_mantinh_dadieutri', '$Dang_mang_thai', '$Do_tuoi_tren_65', '$Tiensubenh_dongmau', '$Tiensubenh_diung', '$Tiensubenh_khac')";
+        $sql = "INSERT INTO `dang_ky_tiem_phong` (`Loai_dang_ky`, `Mui_tiem`, `Ho_ten`, `Ngay_sinh`, `Gioi_tinh`, `So_dien_thoai`, `Email`, `So_cmnd`, `So_the_bhyt`, `Nghe_nghiep`, `Don_vi_cong_tac`, `Quoc_tich`, `Tinh_thanh`, `Quan_huyen`, `Xa_phuong`, `Sonha_tenduong`, `Dan_toc`, `Nhom_uu_tien`, `Ngay_muon_tiem`, `Buoi_muon_tiem`, `Ngay_tiem_mui1`, `Loai_vacxin_mui1`, `Tiensubenh_phanve`, `Tiensubenh_covid`, `Tiensu_tiemvacxin`, `Tiensubenh_suygiammiendich`, `Su_dung_thuoc_corticoid`, `Tiensubenh_captinh`, `Tiensubenh_mantinh`, `Tiensubenh_mantinh_dadieutri`, `Dang_mang_thai`, `Do_tuoi_tren_65`, `Tiensubenh_dongmau`, `Tiensubenh_diung`, `Tiensubenh_khac`) VALUES ('$Loai_dang_ky', '$Mui_tiem', '$Ho_ten', '$Ngay_sinh', '$Gioi_tinh', '$So_dien_thoai', '$Email', '$So_cmnd', '$So_the_bhyt', '$Nghe_nghiep', '$Don_vi_cong_tac', '$Quoc_tich', '$Tinh_thanh', '$Quan_huyen', '$Xa_phuong', '$Sonha_tenduong', '$Dan_toc', '$Nhom_uu_tien', '$Ngay_muon_tiem', '$Buoi_muon_tiem', '$Ngay_tiem_mui1', '$Loai_vacxin_mui1', '$Tiensubenh_phanve', '$Tiensubenh_covid', '$Tiensu_tiemvacxin', '$Tiensubenh_suygiammiendich', '$Su_dung_thuoc_corticoid', '$Tiensubenh_captinh', '$Tiensubenh_mantinh', '$Tiensubenh_mantinh_dadieutri', '$Dang_mang_thai', '$Do_tuoi_tren_65', '$Tiensubenh_dongmau', '$Tiensubenh_diung', '$Tiensubenh_khac')";
         mysqli_query($conn, $sql); 
         echo "<script>alert('Gửi thông tin đăng ký tiêm ngừa vacxin thành công !!');</script>";
     }

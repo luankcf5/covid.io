@@ -6,6 +6,20 @@ function getBotResponse(input) {
 
     // Loại bỏ thành phần số, dấu câu,ký tự đặc biệt, chữ in hoa
     // input = input.replace(/[^a-zA-Z]/g, "");
+    input = input.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+    input = input.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+    input = input.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+    input = input.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+    input = input.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+    input = input.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+    input = input.replace(/đ/g, "d");
+    input = input.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+    input = input.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+    input = input.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+    input = input.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+    input = input.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+    input = input.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
+    input = input.replace(/Đ/g, "D");
     input = input.replace(/A/g,"a");
     input = input.replace(/B/g,"b");
     input = input.replace(/C/g,"c");
@@ -32,20 +46,6 @@ function getBotResponse(input) {
     input = input.replace(/X/g,"x");
     input = input.replace(/Y/g,"y");
     input = input.replace(/Z/g,"z");
-    input = input.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
-    input = input.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
-    input = input.replace(/ì|í|ị|ỉ|ĩ/g, "i");
-    input = input.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
-    input = input.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
-    input = input.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
-    input = input.replace(/đ/g, "d");
-    input = input.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
-    input = input.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
-    input = input.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
-    input = input.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
-    input = input.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
-    input = input.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
-    input = input.replace(/Đ/g, "D");
     input = input.replace(/ /g, "");
     input = input.replace(/[^a-zA-Z]/g, "");
 
@@ -55,8 +55,7 @@ function getBotResponse(input) {
     input = input.replace(/virrus/g,"");
     input = input.replace(/virut/g,"");
     input = input.replace(/corona/g,"");
-
-    input = input.replace(/khaibaoyte/g,"khaibaor");
+    input = input.replace(/khaibaoyte/g,"khaibao");
 
     input = input.replace(/nhiembenh/g,"mac");
     input = input.replace(/macbenh/g,"mac");
@@ -77,6 +76,7 @@ function getBotResponse(input) {
     input = input.replace(/nhuthenao/g,"");
     input = input.replace(/nhunao/g,"");
     input = input.replace(/lalamsao/g,"");
+    input = input.replace(/lamsaode/g,"");
     input = input.replace(/lamsao/g,"");
     input = input.replace(/lacachnao/g,"");
     input = input.replace(/cachnao/g,"");
@@ -113,6 +113,7 @@ function getBotResponse(input) {
     input = input.replace(/tudautoi/g,"");
     input = input.replace(/odaura/g,"");
     input = input.replace(/dodaura/g,"");
+
     
     
     
@@ -124,7 +125,7 @@ function getBotResponse(input) {
     input = input.replace(/noidautien/g,"nguongoc");
     input = input.replace(/xuathien/g,"nguongoc");
     input = input.replace(/noitiethay/g,"nguongoc");
-    input = input.replace(/nguocgoccua/g,"nguongoc");
+    input = input.replace(/nguongoccua/g,"nguongoc");
     input = input.replace(/nguocgocdautien/g,"nguongoc");
 
 
@@ -161,6 +162,7 @@ function getBotResponse(input) {
     input = input.replace(/vacxincapphep/g,"vacxin");
     input = input.replace(/vacxinduoccapphep/g,"vacxin");
     input = input.replace(/trungquoc/g,"my");
+    input = input.replace(/tiemnguavacxin/g,"tiem");
     input = input.replace(/tiemngua/g,"tiem");
     input = input.replace(/tiemphong/g,"tiem");
     input = input.replace(/chichngua/g,"tiem");
@@ -266,7 +268,8 @@ function getBotResponse(input) {
                input == "conginguyhiem" || input == "benhconguyhiem" || input == "benhconguyhiemkhong" ||
                input == "nguoimacconguyhiemkhong" || input == "macconguyhiemkhong" || input == "coginguyhiemkhong"||
                input == "coginguyhiem" || input == "coginguyhiemvay" || input == "benhcoginguyhiemvay"||
-               input == "maccoginguyhiem" || input == "macconguyhiem" || input == "benhconguyhiemvay") {
+               input == "maccoginguyhiem" || input == "macconguyhiem" || input == "benhconguyhiemvay" ||
+               input == "sunguyhiem" || input == "sunguyhiemcua" || input == "coquanguyhiem") {
         return "COVID-19 là căn bệnh nguy hiểm đe dọa nghiêm trọng đến sức khỏe người dân. Bệnh thường phát triển từ các triệu chứng nhẹ tới sốt nặng kéo dài, suy viêm hô hấp cấp tính. Nặng hơn có thể làm tổn thương các cơ quan như gan, tim, thận và gây nhiễm trùng thứ phát đến sốc nhiễm trùng... Đặc biệt rất nguy hiểm với người trên 65 tuổi. Bạn có thể tìm hiểu thêm "+'<a href ="http://localhost/convid-master/covid.html"><u> tại đây.</u></a>';
     //Bien the cua covid
     } else if (input == "bienthe" || input == "cacbienthe" || input == "bienthela" ||
@@ -278,14 +281,14 @@ function getBotResponse(input) {
         return "Hiện nay đã xuất hiện biến thể của SARS-CoV-2 có tên là Delta gây lây nhiễm nhiều hơn và lây lan nhanh hơn các chủng ban đầu. Nó có khả năng lây lan cao hơn biến thể Alpha ban đầu và dễ lây lan nhanh do nó có tỉ lệ miễn dịch lại với các kháng thể chống lại nó khiến những người đã tiêm ngừa vẫn mắc bệnh và lây lan cho người khác. Tuy nhiên thời gian lây nhiễm của nó rút ngắn hơn và lượng vật chất di truyền thấp hơn nên có thể nó ít nguy hiểm cho cơ thể hơn ban đầu.";
         // Lay lan Covid
     } else if (input == "laylan" || input == "laylannhanh" || input == "conduonglaylan" ||
-               input == "cachlaylan" || input == "dauhieulaylan" || input == "cachthuclaylan" ||
+               input == "laylan" || input == "dauhieulaylan" || input == "cachthuclaylan" ||
                input == "nguyennhanhlaylan" || input == "nguongoclaylan" || input == "laynhiem" ||
-               input == "saolaylan" || input == "laylancua" || input == "nhungcachlaylan" ||
+               input == "saolaylan" || input == "laylancua" || input == "nhunglaylan" ||
                input == "nhungcachthuclaylan" || input == "conduonglaylan" || input == "nhungcachthulaylancua" ||
-               input == "nhungcachlaylancua" || input == "conduonglaylancua" || input == "nhungdauhieulaylan" ||
+               input == "nhunglaylancua" || input == "conduonglaylancua" || input == "nhungdauhieulaylan" ||
                input == "nhungdauhieulaylan" || input == "saolaylannhanh" || input == "laylanthenao" ||
-               input == "laylan" || input == "nhungconduonglaylancua" || input == "cachlaylancua" ||
-               input == "caccachlaylan" || input == "caccachlaylancua" || input == "vaicachlaylancua") {
+               input == "sulaylan" || input == "nhungconduonglaylancua" || input == "laylancua" ||
+               input == "caclaylan" || input == "caclaylancua" || input == "vailaylancua") {
         return "Vi-rút corona (COVID-19) có thể lây từ miệng hoặc mũi của người bị nhiễm bệnh dưới dạng các giọt nhỏ khi họ ho, hắt hơi, nói chuyện, hát hoặc thở.. Bạn có thể tìm hiểu thêm "+'<a href ="http://localhost/convid-master/covid.html"><u> tại đây.</u></a>';
     // Nguy co mac covid
     } else if (input == "aimac" || input == "aicothemac" || input == "nhungaicothemac" ||
@@ -370,14 +373,14 @@ function getBotResponse(input) {
                input == "vacxincuaduc" || input == "vacxincuamyconhungloainao" || input == "vacxincuaducconhungloainao" ||
                input == "vacxinvietnamgomnhungloainao" || input == "coloaimayvacxin" || input == "comayloaivacxin" ||
                input == "comayloaivacxinduoctiem" || input == "coloaivacxinduoctiem" || input == "conmayloaivacxin" ||
-               input == "vailoaivacxin" || input == "coloaivacxin" || input == "coloaivacxinovietnam" ||
+               input == "vailoaivacxin" || input == "loaivacxin" || input == "coloaivacxinovietnam" ||
                input == "motvailoaivacxin" || input == "coloaivacxintaivietnam" || input == "motvailoaivacxin" ||
                input == "motvailoaivacxintaivietnam" || input == "motvailoaivacxinhienco" || input == "motvailoaivacxinhiencoovietnam") {
         return "Hiện nay có 8 loại vacxin được cấp phép tại Việt Nam là: SINOVAC (Trung Quốc), JANSSEN (Mỹ), ASTRA ZECECA (Mỹ), SINOPHARM (Trung Quốc), PFIZER BIONTECH (Mỹ-Đức), NOVAVAX (Mỹ), SPUTNIK (Nga), MODERNA (Mỹ). Bạn có thể tìm hiểu thêm "+ '<a href ="http://localhost/convid-master/tiemphong.html"><u> tại đây.</u></a>';
     // dang ky tiem phong
     } else if (input == "tiem" || input == "cachtiem" || input == "tiemodau" ||
                input == "toicothetiem" || input == "toicothetiemodau" || input == "lamsaotiem" ||
-               input == "lamsaodetiem" || input == "cachdetiem" || input == "toimuontiem" || 
+               input == "tiem" || input == "cachdetiem" || input == "toimuontiem" || 
                input == "tiem" || input == "noitiem" || input == "noitiemodau" ||
                input == "toicanditiem" || input == "toimuonditiem" || input == "toicanditiem" ||
                input == "toicantiem" || input == "diadiemtiem" || input == "noicothetiem" ||

@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Xin chào mình là Thanh. Nếu bạn có thắc mắc gì bạn có thể hỏi mình nhé !!"
+    let firstMessage = "Xin chào bạn ! Nếu bạn có thắc mắc gì bạn có thể hỏi mình nhé !!"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -51,6 +51,7 @@ function getHardResponse(userText) {
     let botResponse = getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
+    
 
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
@@ -67,6 +68,7 @@ function getResponse() {
 
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
+    
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
     setTimeout(() => {
@@ -94,7 +96,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Cảm ơn vì đã giúp đỡ..")
+    buttonSendText("Tính năng đang phát triển. Bạn vui lòng đợi lần sau nhé !!!")
 }
 
 // Press enter to send a message

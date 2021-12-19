@@ -38,7 +38,7 @@
         } else {
             $Ho_ten = input_data($_POST["Ho_ten"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Ho_ten)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Ho_ten)) {
                 $Ho_tenErr = "Họ và tên chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -62,7 +62,7 @@
         } else {
             $Quoc_tich = input_data($_POST["Quoc_tich"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Quoc_tich)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Quoc_tich)) {
                 $Quoc_tichErr = "Tên Quốc tịch chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -72,7 +72,7 @@
         } else {
             $Tinh_thanh = input_data($_POST["Tinh_thanh"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Tinh_thanh)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Tinh_thanh)) {
                 $Tinh_thanhErr = "Tên tỉnh thành chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -82,7 +82,7 @@
         } else {
             $Quan_huyen = input_data($_POST["Quan_huyen"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Quan_huyen)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Quan_huyen)) {
                 $Quan_huyenErr = "Tên quận huyện chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -92,7 +92,7 @@
         } else {
             $Xa_phuong = input_data($_POST["Xa_phuong"]);
             // Kiểm tra và chỉ cho phép nhập chữ và khoảng trắng 
-            if (!preg_match("/^[a-zA-Z ]*$/",$Xa_phuong)) {
+            if (!preg_match("/^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ ]*$/",$Xa_phuong)) {
                 $Xa_phuongErr = "Tên xã phường chỉ được nhập chữ cái và khoảng trắng.";
             }
         }
@@ -113,6 +113,7 @@
 
     if (isset($_POST["submit"]) && (empty($Ho_tenErr)) && (empty($So_dien_thoaiErr)) && (empty($Quoc_tichErr)) && (empty($Tinh_thanhErr))&& (empty($Quan_huyenErr))&& (empty($Xa_phuongErr))&& (empty($Sonha_tenduongErr)) ) {
     $Loai_khai_bao = $_POST["Loai_khai_bao"];
+    $_POST["Ho_ten"] = mb_strtoupper($_POST["Ho_ten"]);
     $Ho_ten = $_POST["Ho_ten"];
     $So_dien_thoai = $_POST["So_dien_thoai"];
     $Ngay_sinh = $_POST["Ngay_sinh"];
