@@ -61,7 +61,7 @@
                            <a href="trieuchung.html">TRIỆU CHỨNG</a>
                            <a href="phongngua.html">PHÒNG NGỪA</a>
                            <a href="xetnghiem.html">XÉT NGHIỆM</a>
-                           <a href="tiemphong.html">TIÊM PHÒNG</a>
+                           <a href="tinhhinhvacxin.html">TIÊM PHÒNG</a>
                            <a href="index.html">TIN TỨC COVID</a>
                         </div>
                      </div>
@@ -457,7 +457,7 @@
                           <li><a href="trieuchung.html">Triệu trứng bệnh</a></li>
                           <li><a href="phongngua.html">Phòng ngừa bệnh</a></li>
                           <li><a href="xetnghiem.html">Xét Nghiệm, Test Nhanh</a></li>
-                          <li><a href="tiemphong.html">Tiêm phòng Vacxin</a></li>
+                          <li><a href="tinhhinhvacxin.html">Tiêm phòng Vacxin</a></li>
                           <li><a href="bacsi.html">Lên đầu trang...</a></li>
                        </ul>
                     </div>
