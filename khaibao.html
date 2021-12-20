@@ -16,7 +16,7 @@
         <!-- bootstrap css -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <!-- style css -->
-        <link rel="stylesheet" type="text/css" href="css/style.php">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Responsive-->
         <link rel="stylesheet" href="css/responsive.css">
         <!-- fevicon -->
@@ -35,10 +35,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      </head>
    <body>
-   <?php
-        require_once("lib/connection.php");
-        require_once("lib/data-khaibao.php");
-    ?>
       <!--header section start -->
       <div class="header_section header_bg">
         <div class="container-fluid">
@@ -49,7 +45,7 @@
                      <div class="togle_">
                         <div class="menu_main">
                            <ul>
-                              <li><a href="khaibao.php" style="margin-left: -100px;" ><b>KHAI BÁO Y TẾ</b></a></li>
+                              <li><a href="khaibao.html" style="margin-left: -100px;" ><b>KHAI BÁO Y TẾ</b></a></li>
                               <li><a href="timkiem.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                            </ul>
                         </div>
@@ -96,7 +92,7 @@
                   <div class="taital_main">
                      <div class="text">
                         <h1 class="covid_taital" style="text-align:center;">KHAI BÁO Y TẾ ĐẾN SỞ Y TẾ QUỐC GIA</h1>
-                        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >
+                        <form method="post" action="" >
                         <div class="card px-1 py-2 p-sm-2 mt-2 list_khaibao">
                            <div class="row">
                                 
@@ -136,7 +132,7 @@
                                    <div class="form-group">
                                        <span>Họ và tên</span> <span class="text-danger">
                                            (*)</span>:
-                                           <span class="text-danger"><?php echo $Ho_tenErr; ?> </span>
+                                           <span class="text-danger"> </span>
                                        <input type="text" class="form-control" name="Ho_ten" placeholder="Họ và tên" style="text-transform:uppercase">
                                    </div>
                                </div>
@@ -145,7 +141,7 @@
                                      <span class="tel" translate="so_dien_thoai">Số điện thoại</span><span class="text-danger"> (*)</span>:
                                      <!-- <input type="number" class="form-control so_dien_thoai input_phone" placeholder="Số điện thoại liên lạc" data-bind="value:so_dien_thoai" pattern="[0-9]*" min="0" step="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57 && this.value.length <= 11'
                                          title="Numbers only"> -->
-                                         <span class="text-danger"><?php echo $So_dien_thoaiErr; ?> </span>
+                                         <span class="text-danger"> </span>
                                      <input type="tel" name="So_dien_thoai" class="form-control">
                                  </div>
                              </div>
@@ -171,28 +167,28 @@
                                <div class="col-12 col-sm-6 col-md-3 quoctich">
                                    <div class="form-group">
                                        <span class="text_nationality">Quốc tịch</span> <span class="quocgia text-danger"> (*)</span>:
-                                       <span class="text-danger"><?php echo $Quoc_tichErr; ?> </span>
+                                       <span class="text-danger"> </span>
                                        <input type="text" class="form-control" name="Quoc_tich" placeholder="Nhập quốc tịch">
                                    </div>
                                </div>
                                <div class="col-12 col-sm-6 col-md-3 tinhthanh">
                                    <div class="form-group">
                                        <span class="text_province">Tỉnh thành</span> <span class="tinhthanh text-danger"> (*)</span>:
-                                       <span class="text-danger"><?php echo $Tinh_thanhErr; ?> </span>
+                                       <span class="text-danger"> </span>
                                        <input type="text" class="form-control" name="Tinh_thanh" placeholder="Nhập tỉnh/thành phố">
                                    </div>
                                </div>
                                <div class="col-12 col-sm-6 col-md-3 quanhuyen">
                                    <div class="form-group">
                                        <span class="text_district">Quận huyện</span> <span class="quanhuyen text-danger"> (*)</span>:
-                                       <span class="text-danger"><?php echo $Quan_huyenErr; ?> </span>
+                                       <span class="text-danger"> </span>
                                        <input type="text" class="form-control" name="Quan_huyen" placeholder="Nhập quận/huyện">
                                    </div>
                                </div>
                                <div class="col-12 col-sm-6 col-md-3 xaphuong">
                                    <div class="form-group">
                                        <span class="text_ward">Xã phường</span> <span class="xaphuong text-danger"> (*)</span>:
-                                       <span class="text-danger"><?php echo $Xa_phuongErr; ?> </span>
+                                       <span class="text-danger"> </span>
                                        <input type="text" class="form-control" name="Xa_phuong" placeholder="Nhập xã/phường/thị trấn">
                                    </div>
                                </div>
@@ -200,7 +196,7 @@
                                    <div class="form-group">
                                        <span class="text_address">Số nhà, tên đường</span><span class="text-danger">
                                            (*)</span>:
-                                           <span class="text-danger"><?php echo $Sonha_tenduongErr; ?> </span>
+                                           <span class="text-danger">> </span>
                                            <input type="text" name="Sonha_tenduong" class="form-control" placeholder="Số nhà, tên đường">
                                    </div>
                                </div>         
